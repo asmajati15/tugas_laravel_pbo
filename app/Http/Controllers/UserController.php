@@ -75,7 +75,7 @@ class UserController extends Controller
     {
         User::where('id', $id)->first();
         return view ('update', [
-            'user' => $user
+            'user' => $id
         ]);
     }
 
